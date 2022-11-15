@@ -1,0 +1,119 @@
+@mobile: ~"only screen and (min-width: 300px) and (max-width: 1000px)";
+@desktop: ~"only screen and (min-width: 1001px)";
+
+.sub-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px 16px 20px;
+    border-bottom: 1px solid #BDBDBD;
+    margin: 0 30px 10px 30px;
+}
+
+.numbers-displayed{
+    margin: 0 30px 10px 30px;
+    padding-bottom: 5px;
+    
+    p{
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 14px;
+        margin-left: 20px;
+
+    }
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom:1px solid #BDBDBD ;
+    margin: 10px 30px 20px 30px ;
+    padding: 15px;
+    .pokeImage{
+        border: 1px solid #565656;
+        border-radius: 4px;
+        margin-right: 20px;
+    }
+    .pokeText{
+        h3{
+            color: rgba(0, 0, 0, 0.87);
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        p{
+            color: #565656;
+            font-size: 14px;
+            width: 60%;
+        }
+    }
+    img{
+        width:100px;
+    }
+}
+
+.page-controls{
+    padding: 30px;
+}
+pagination-controls{
+    text-align: end;
+}
+
+@media @mobile {
+    .sub-header{
+        flex-direction: column;
+        padding: 0;
+        margin: 0 20px;
+        .title{
+            margin-bottom: 20px;
+            h1{
+                font-weight: 700;
+                font-size: 18px;
+                text-align: center;
+                margin-bottom: 10px;
+                
+            }
+            h3{
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    }
+    .numbers-displayed{
+        margin: 0 20px;
+        padding: 5px 0;
+    }
+    
+    .card{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        
+
+        .pokeText{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3{ 
+             font-size: 28px;
+             margin-right: 20px;
+            }
+            margin: 0;
+            .type{
+                text-align: center;
+            }
+        }
+    }
+    .page-controls{
+        padding: 0;
+    }
+    .page-controls ::ng-deep .ngx-pagination{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    pagination-controls{
+        text-align: center;
+        
+    }
+
+}

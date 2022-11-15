@@ -1,0 +1,49 @@
+@mobile: ~"only screen and (min-width: 300px) and (max-width: 1000px)";
+
+header{
+    padding: 30px 30px;
+    background-color: #020202;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    img{
+        width: 170px;
+        height: 40px;
+    }
+
+    .greeting{
+        display: flex;
+        flex-direction: row;
+    }
+    .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    margin-left: 5px;
+    }
+
+    
+}
+
+@media @mobile{
+    header{
+        padding:20px 0 20px 50px;
+        img{
+            width:30%;
+            height:20px;
+        }
+        .greeting{
+            width: 50%;
+            font-size: 12px;
+            margin-left: 100px;
+            margin-top: 4px;
+        }
+        .material-symbols-outlined{
+            margin-top: -5px;
+        }
+    }
+}

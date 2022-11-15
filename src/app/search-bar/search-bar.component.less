@@ -1,0 +1,33 @@
+@mobile: ~"only screen and (min-width: 300px) and (max-width: 1000px)";
+
+input{
+    width: 257px;
+    height: 40px;
+    padding-left: 5px;
+}
+span{
+    position: absolute;
+    padding: 10px;
+    right: 50px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+@media @mobile{
+  input{
+    margin-bottom: 20px;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  span{
+    position: absolute;
+    right: 90px;
+    
+  }
+}
